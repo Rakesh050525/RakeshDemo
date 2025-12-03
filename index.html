@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Static Web Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MySite</h1>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
+      <nav id="nav" class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to a simple static web page</h2>
+        <p>This is a clean, responsive template you can extend.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <article class="card">
+        <h3>Responsive</h3>
+        <p>Looks good on phones, tablets and desktops.</p>
+      </article>
+      <article class="card">
+        <h3>Accessible</h3>
+        <p>Semantic markup and keyboard friendly controls.</p>
+      </article>
+      <article class="card">
+        <h3>Easy to Deploy</h3>
+        <p>Deploy to GitHub Pages in a few steps.</p>
+      </article>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About</h3>
+      <p>This example demonstrates a minimal structure for a static site.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div id="thanks" class="thanks" hidden>Thanks! Your message was received.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> MySite</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
