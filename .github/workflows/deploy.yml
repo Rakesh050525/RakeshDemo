@@ -19,17 +19,17 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
-                node-version: '18'
-            
+                node-version: "18"
+
             - name: Install CSS validation tools
               run: npm install -g stylelint
-            
+
             - name: Validate CSS files
               run: stylelint "**/*.css"
-            
+
             - name: Check for style changes
               run: git diff --name-only -- "*.css"
-            
+
             - name: Commit CSS updates
               if: github.event_name == 'push'
               run: |
